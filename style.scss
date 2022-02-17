@@ -1,0 +1,40 @@
+$color-1:#303041;
+$color-2:#0ea2f6;
+$color-3:#f4fcfe;
+
+
+body{
+ 
+display: flex;
+height: 100vh;
+align-items: center;
+  background-color: $color-1;
+}
+
+
+
+.horizontal-snap{
+
+
+  align-items: center;
+ margin: 0 auto;
+ display: grid;
+ grid-auto-flow: column;
+ gap:1rem;
+ height: calc(180px + 1rem);
+ padding: 1rem;
+ width: 480px;
+ overflow-y: auto;
+ overscroll-behavior-x: contain;
+ scroll-snap-type: x mandatory;
+ >a{
+scroll-snap-align: center;
+
+ }
+ img{
+   width: 180px;
+   max-width: none;
+   object-fit: contain;
+   border-radius: 1rem;
+ }
+}
